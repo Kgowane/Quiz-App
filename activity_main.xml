@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.quizapp.MainActivity">
+
+        <TextView
+            android:id="@+id/question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="36dp"
+            android:text="1. The average of first 50 natural numbers is …." />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/question_1_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="25.30" />
+
+            <RadioButton
+                android:id="@+id/radio_1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="25.50" />
+
+            <RadioButton
+                android:id="@+id/radio_1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="25.00" />
+
+            <RadioButton
+                android:id="@+id/radio_1d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="12.25" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_1_radio_group"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="2. The number of 3-digit numbers divisible by 6, is …." />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/question_2_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="149" />
+
+            <RadioButton
+                android:id="@+id/radio_2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="166" />
+
+            <RadioButton
+                android:id="@+id/radio_2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="150" />
+
+            <RadioButton
+                android:id="@+id/radio_2d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="151" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_2_radio_group"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="3. A clock strikes once at 1 o’clock, twice at 2 o’clock, thrice at 3 o’clock and so on. How many times will it strike in 24 hours?" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/question_3_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_3"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked3"
+                android:text="78" />
+
+            <RadioButton
+                android:id="@+id/radio_3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked3"
+                android:text="136" />
+
+            <RadioButton
+                android:id="@+id/radio_3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked3"
+                android:text="156" />
+
+            <RadioButton
+                android:id="@+id/radio_3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked3"
+                android:text="196" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_3_radio_group"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="4. The cube root of 1331 is ..." />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/question_4_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_4"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked4"
+                android:text="11" />
+
+            <RadioButton
+                android:id="@+id/radio_4b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked4"
+                android:text="13" />
+
+            <RadioButton
+                android:id="@+id/radio_4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked4"
+                android:text="19" />
+
+            <RadioButton
+                android:id="@+id/radio_4d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked4"
+                android:text="17" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/question_4_radio_group"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="submitAnswers"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/question_4_radio_group"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorAccent"
+            android:onClick="resetScore"
+            android:text="reset" />
+
+        <TextView
+            android:id="@+id/score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_4_radio_group"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="0%"
+            android:textColor="#000000"
+            android:textSize="56sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
